@@ -1,5 +1,5 @@
 class Config:
-    FROMEMAIL = "PA-TSA Notifier <notify@theendlessweb.com>"
+    FROMEMAIL = "TSA Notifier <notify@theendlessweb.com>"
     UPLOAD_FOLDER = ''
     ALLOWED_EXTENSIONS = (['txt', 'pdf', 'png', 'jpg', 'jpeg', 'gif'])
     DATABASE = 'C:/Users/Adam Gilbert/PycharmProjects/notifier/newdata.db'
