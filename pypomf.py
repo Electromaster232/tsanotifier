@@ -65,7 +65,8 @@ def allowed_file(filename):
 #            myobj = {'to': [to_email], 'from': from_email, 'subject': subject,
 #                     'plain_body': content_clean}
 #            url = "https://postal.theendlessweb.com/api/v1/send/message"
-#            headers = {'Content-Type': "application/json", 'X-Server-API-Key': "MH8hLnmN82jBm9jINCz8SpgQ",
+#            headers = {'Content-Type': "application/json", 
+'X-Server-API-Key': "API_KEY_HERE",
 #                       "Accept": '*/*'}
 #            requests.post(url, json=myobj, headers=headers)
 #    db = getattr(g, '_database', None)
@@ -101,7 +102,8 @@ def processNationals():
             myobj = {'to': [to_email], 'from': from_email, 'subject': subject,
                      'plain_body': content_clean}
             url = "https://postal.theendlessweb.com/api/v1/send/message"
-            headers = {'Content-Type': "application/json", 'X-Server-API-Key': "MH8hLnmN82jBm9jINCz8SpgQ",
+            headers = {'Content-Type': "application/json", 
+'X-Server-API-Key': "API_KEY_HERE",
                        "Accept": '*/*'}
             requests.post(url, json=myobj, headers=headers)
     db = getattr(g, '_database', None)
@@ -126,7 +128,8 @@ def signup():
         myobj = {'to': [to_email], 'from': from_email, 'subject': subject,
                  'html_body': content}
         url = "https://postal.theendlessweb.com/api/v1/send/message"
-        headers = {'Content-Type': "application/json", 'X-Server-API-Key': "MH8hLnmN82jBm9jINCz8SpgQ", "Accept": '*/*'}
+        headers = {'Content-Type': "application/json", 'X-Server-API-Key': 
+"API_KEY_HERE", "Accept": '*/*'}
         res = requests.post(url, json=myobj, headers=headers)
         if res.status_code != 200:
             print(res)
